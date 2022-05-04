@@ -1,9 +1,9 @@
 const ftoc = function(fahrenheit) {
-  let result = ((fahrenheit - 32) * (3/9));
+  let result = ((fahrenheit - 32) * (5/9));
   if (result % 1 == 0) {
     return parseInt(result);
   }
-  return result.toFixed(1);
+  return parseFloat(result.toFixed(1));
 };
 
 const ctof = function(celsius) {
@@ -11,7 +11,8 @@ const ctof = function(celsius) {
   if (result % 1 == 0) {
     return parseInt(result);
   }
-  return result.toFixed(1);
+
+  return parseFloat(result.toFixed(1));
 };
 
 // Do not edit below this line
